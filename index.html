@@ -51,6 +51,13 @@
             </div>
         </div>
     </nav>
+   <div class="search-container">
+    <div class="search-box">
+        <input type="text" id="searchBar" placeholder="Pesquisar produtos...">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+</div>
+
 
     <!-- HERO -->
     <section id="hero" class="hero-section text-center d-flex align-items-center justify-content-center">
@@ -230,6 +237,25 @@
             });
         });
     </script>
+    <script>
+    const searchInput = document.getElementById("searchBar");
+    const productCards = document.querySelectorAll(".card");
+
+    searchInput.addEventListener("input", () => {
+        const searchText = searchInput.value.toLowerCase();
+
+        productCards.forEach(card => {
+            const productName = card.querySelector(".card-title").textContent.toLowerCase();
+
+            if (productName.includes(searchText)) {
+                card.parentElement.style.display = "block"; // Mostra o card
+            } else {
+                card.parentElement.style.display = "none"; // Esconde o card
+            }
+        });
+    });
+</script>
+
 
 </body>
 

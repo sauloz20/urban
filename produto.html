@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Urban Line - Moda Urbana</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Animações -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                Urban Line
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="menuLateralLabel">Urban Line</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5">
+                        <li class="nav-item mb-3"><a class="nav-link" href="#hero">Início</a></li>
+                        <li class="nav-item mb-3"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item mb-3"><a class="nav-link" href="#novidades">Novidades</a></li>
+                        <li class="nav-item mb-3"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold fs-5" href="#">
+                                <i class="fa-solid fa-cart-shopping"></i> Carrinho
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="searchBar" placeholder="Pesquisar produtos...">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+    </div>
+
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section text-center d-flex align-items-center justify-content-center">
+        <div data-aos="fade-up">
+            <h1 class="hero-title">Urban Line</h1>
+            <p class="hero-sub">Moda que acompanha seu ritmo.</p>
+            <a href="#produtos" class="btn btn-buy">Comprar Agora</a>
+        </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section id="produtos" class="container py-5">
+        <h2 class="text-center mb-5" data-aos="fade-up">Produtos em promoção</h2>
+
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="https://cdn.sistemawbuy.com.br/arquivos/9fa85fff5ce81908a51b793785419a26/produtos/68e6b2f60939f/global_dist_pto_mode2-692381071bad2.jpg" alt="Camiseta" />
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Streetwear</h5>
+                        <p class="rating">⭐ 4.8 • 120 avaliações</p>
+                        <p class="card-price">R$ 89,90</p>
+                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="https://lojalevis.vtexassets.com/arquivos/ids/610740-800-800?v=638839879307400000&width=800&height=800&aspect=true" alt="Moletom" />
+                    <div class="card-body">
+                        <h5 class="card-title">Moletom Urban</h5>
+                        <p class="rating">⭐ 4.9 • 98 avaliações</p>
+                        <p class="card-price">R$ 149,90</p>
+                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1171095/calca_cargo_no_age_basic_preto_543_1_0bc4591cd5ec42aa6bb9f6886b1613f4.jpg" alt="Calça Cargo" />
+                    <div class="card-body">
+                        <h5 class="card-title">Calça Cargo</h5>
+                        <p class="rating">⭐ 4.7 • 210 avaliações</p>
+                        <p class="card-price">R$ 129,90</p>
+                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rdvj-lxmwr88c9y1r93.webp" alt="Boné Aba Reta" />
+                    <div class="card-body">
+                        <h5 class="card-title">Boné Aba Reta</h5>
+                        <p class="rating">⭐ 4.6 • 67 avaliações</p>
+                        <p class="card-price">R$ 59,90</p>
+                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="https://thesaint.com.br/media/catalog/product/1/4/14.01.03.011.007_1_p6vzkyh8qol55rbp.webp" alt="Jaqueta Oversized" />
+                    <div class="card-body">
+                        <h5 class="card-title">Jaqueta Oversized</h5>
+                        <p class="rating">⭐ 5.0 • 140 avaliações</p>
+                        <p class="card-price promo"><span>R$ 259,90</span> R$ 199,90</p>
+                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="https://acdn-us.mitiendanube.com/stores/004/270/422/products/21-41dc766ee472e8d2fb17534682666725-1024-1024.webp" alt="Camiseta Premium" />
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Premium</h5>
+                        <p class="rating">⭐ 4.8 • 188 avaliações</p>
+                        <p class="card-price">R$ 79,90</p>
+                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mepq0azkptz70c.webp" alt="Tênis Urban Flex" />
+                    <div class="card-body">
+                        <h5 class="card-title">Tênis Urban Flex</h5>
+                        <p class="rating">⭐ 4.9 • 402 avaliações</p>
+                        <p class="card-price">R$ 229,90</p>
+                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lx5kn3pg71cid2" alt="Calça balão" />
+                    <div class="card-body">
+                        <h5 class="card-title">Calça Balão</h5>
+                        <p class="rating">⭐ 4.5 • 54 avaliações</p>
+                        <p class="card-price">R$ 139,90</p>
+                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card">
+                    <img src="https://cdn.awsli.com.br/600x700/2579/2579297/produto/286722331/102-lqnfwhaaaf.jpg" alt="Shoulder Bag" />
+                    <div class="card-body">
+                        <h5 class="card-title">Shoulder Bag Minimal</h5>
+                        <p class="rating">⭐ 4.7 • 190 avaliações</p>
+                        <p class="card-price">R$ 69,90</p>
+                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/55999999999" class="btn-whatsapp" target="_blank">💬</a>
+
+    <!-- RODAPÉ -->
+    <footer id="contato" class="text-center p-4 mt-5">
+        <h5>Urban Line</h5>
+        <p>Moda Urbana • Estilo • Atitude</p>
+        <p>Contato: urbanline@contato.com</p>
+        <p>&copy; 2025 Urban Line - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- POP-UP CARRINHO -->
+    <div id="cart-popup" class="cart-popup">
+        ✅ Produto adicionado ao carrinho!
+    </div>
+    <script>
+        // Seleciona todos os botões "Adicionar ao carrinho"
+        const addToCartButtons = document.querySelectorAll('.btn-buy');
+
+        // Seleciona o pop-up
+        const cartPopup = document.getElementById('cart-popup');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Mostra o pop-up
+                cartPopup.classList.add('show');
+
+                // Esconde depois de 2 segundos
+                setTimeout(() => {
+                    cartPopup.classList.remove('show');
+                }, 2000);
+            });
+        });
+    </script>
+    <script>
+        const searchInput = document.getElementById("searchBar");
+        const productCards = document.querySelectorAll(".card");
+
+        searchInput.addEventListener("input", () => {
+            const searchText = searchInput.value.toLowerCase();
+
+            productCards.forEach(card => {
+                const productName = card.querySelector(".card-title").textContent.toLowerCase();
+
+                if (productName.includes(searchText)) {
+                    card.parentElement.style.display = "block"; // Mostra o card
+                } else {
+                    card.parentElement.style.display = "none"; // Esconde o card
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

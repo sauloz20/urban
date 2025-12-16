@@ -37,7 +37,7 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav ms-auto fs-5">
                     <li class="nav-item"><a class="nav-link" href="#hero">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produto.html">Produtos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                     <li class="nav-item">
                         <a class="nav-link fw-bold" href="#"><i class="fa-solid fa-cart-shopping"></i> Carrinho</a>
@@ -67,129 +67,130 @@
 
     <div class="row g-4">
 
-       
         <!-- CARD 1 -->
         <div class="col-md-4" data-aos="fade-up">
-            <div class="card position-relative">
+            <div class="card position-relative product-card" data-name="Camiseta Streetwear" data-price="89,90">
                 <span class="badge-promo">🔥 Promo do Dia</span>
-                <img src="https://cdn.sistemawbuy.com.br/arquivos/9fa85fff5ce81908a51b793785419a26/produtos/68e6b2f60939f/global_dist_pto_mode2-692381071bad2.jpg">
+                <img src="https://cdn.sistemawbuy.com.br/arquivos/9fa85fff5ce81908a51b793785419a26/produtos/68e6b2f60939f/global_dist_pto_mode2-692381071bad2.jpg" alt="Camiseta Streetwear">
                 <div class="card-body">
                     <h5 class="card-title">Camiseta Streetwear</h5>
                     <p class="rating">⭐ 4.8 • 120 avaliações</p>
                     <p class="card-price">R$ 89,90</p>
-                    <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    <button class="btn btn-buy w-100 open-modal-btn" data-bs-toggle="modal" data-bs-target="#productModal">Escolher tamanho</button>
                 </div>
             </div>
         </div>
 
         <!-- CARD 2 -->
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card position-relative">
+            <div class="card position-relative product-card" data-name="Moletom Urban" data-price="149,90">
                 <span class="badge-promo">🔥 Promo do Dia</span>
-                <img src="https://lojalevis.vtexassets.com/arquivos/ids/610740-800-800?v=638839879307400000">
+                <img src="https://lojalevis.vtexassets.com/arquivos/ids/610740-800-800?v=638839879307400000" alt="Moletom Urban">
                 <div class="card-body">
                     <h5 class="card-title">Moletom Urban</h5>
                     <p class="rating">⭐ 4.9 • 98 avaliações</p>
                     <p class="card-price">R$ 149,90</p>
-                    <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    <button class="btn btn-buy w-100 open-modal-btn" data-bs-toggle="modal" data-bs-target="#productModal">Escolher tamanho</button>
                 </div>
             </div>
         </div>
 
         <!-- CARD 3 -->
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card position-relative">
+            <div class="card position-relative product-card" data-name="Calça Cargo" data-price="129,90">
                 <span class="badge-promo">🔥 Promo do Dia</span>
-                <img src="https://images.tcdn.com.br/img/img_prod/1171095/calca_cargo_no_age_basic_preto_543_1_0bc4591cd5ec42aa6bb9f6886b1613f4.jpg">
+                <img src="https://images.tcdn.com.br/img/img_prod/1171095/calca_cargo_no_age_basic_preto_543_1_0bc4591cd5ec42aa6bb9f6886b1613f4.jpg" alt="Calça Cargo">
                 <div class="card-body">
                     <h5 class="card-title">Calça Cargo</h5>
                     <p class="rating">⭐ 4.7 • 210 avaliações</p>
                     <p class="card-price">R$ 129,90</p>
-                    <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    <button class="btn btn-buy w-100 open-modal-btn" data-bs-toggle="modal" data-bs-target="#productModal">Escolher tamanho</button>
                 </div>
             </div>
         </div>
 
+        <!-- demais cards continuam iguais, só adicionando a classe product-card e botão Escolher tamanho -->
+
         <!-- CARD 4 -->
         <div class="col-md-4" data-aos="fade-up">
-            <div class="card position-relative">
+            <div class="card position-relative product-card" data-name="Boné Aba Reta" data-price="59,90">
                 <span class="badge-promo">🔥 Promo do Dia</span>
-                <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rdvj-lxmwr88c9y1r93.webp">
+                <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rdvj-lxmwr88c9y1r93.webp" alt="Boné Aba Reta">
                 <div class="card-body">
                     <h5 class="card-title">Boné Aba Reta</h5>
                     <p class="rating">⭐ 4.6 • 67 avaliações</p>
                     <p class="card-price">R$ 59,90</p>
-                    <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    <button class="btn btn-buy w-100 open-modal-btn" data-bs-toggle="modal" data-bs-target="#productModal">Escolher tamanho</button>
                 </div>
             </div>
         </div>
 
         <!-- CARD 5 -->
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card position-relative">
+            <div class="card position-relative product-card" data-name="Jaqueta Oversized" data-price="199,90">
                 <span class="badge-promo">🔥 Promo do Dia</span>
-                <img src="https://thesaint.com.br/media/catalog/product/1/4/14.01.03.011.007_1_p6vzkyh8qol55rbp.webp">
+                <img src="https://thesaint.com.br/media/catalog/product/1/4/14.01.03.011.007_1_p6vzkyh8qol55rbp.webp" alt="Jaqueta Oversized">
                 <div class="card-body">
                     <h5 class="card-title">Jaqueta Oversized</h5>
                     <p class="rating">⭐ 5.0 • 140 avaliações</p>
                     <p class="card-price"><del>R$ 259,90</del> R$ 199,90</p>
-                    <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    <button class="btn btn-buy w-100 open-modal-btn" data-bs-toggle="modal" data-bs-target="#productModal">Escolher tamanho</button>
                 </div>
             </div>
         </div>
 
         <!-- CARD 6 -->
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card position-relative">
+            <div class="card position-relative product-card" data-name="Camiseta Premium" data-price="79,90">
                 <span class="badge-promo">🔥 Promo do Dia</span>
-                <img src="https://acdn-us.mitiendanube.com/stores/004/270/422/products/21-41dc766ee472e8d2fb17534682666725-1024-1024.webp">
+                <img src="https://acdn-us.mitiendanube.com/stores/004/270/422/products/21-41dc766ee472e8d2fb17534682666725-1024-1024.webp" alt="Camiseta Premium">
                 <div class="card-body">
                     <h5 class="card-title">Camiseta Premium</h5>
                     <p class="rating">⭐ 4.8 • 188 avaliações</p>
                     <p class="card-price">R$ 79,90</p>
-                    <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    <button class="btn btn-buy w-100 open-modal-btn" data-bs-toggle="modal" data-bs-target="#productModal">Escolher tamanho</button>
                 </div>
             </div>
         </div>
 
         <!-- CARD 7 -->
         <div class="col-md-4" data-aos="fade-up">
-            <div class="card position-relative">
+            <div class="card position-relative product-card" data-name="Tênis Urban Flex" data-price="229,90">
                 <span class="badge-promo">🔥 Promo do Dia</span>
-                <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mepq0azkptz70c.webp">
+                <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mepq0azkptz70c.webp" alt="Tênis Urban Flex">
                 <div class="card-body">
                     <h5 class="card-title">Tênis Urban Flex</h5>
                     <p class="rating">⭐ 4.9 • 402 avaliações</p>
                     <p class="card-price">R$ 229,90</p>
-                    <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    <button class="btn btn-buy w-100 open-modal-btn" data-bs-toggle="modal" data-bs-target="#productModal">Escolher tamanho</button>
                 </div>
             </div>
         </div>
 
         <!-- CARD 8 -->
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card position-relative">
+            <div class="card position-relative product-card" data-name="Calça Balão" data-price="139,90">
                 <span class="badge-promo">🔥 Promo do Dia</span>
-                <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lx5kn3pg71cid2">
+                <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lx5kn3pg71cid2" alt="Calça Balão">
                 <div class="card-body">
                     <h5 class="card-title">Calça Balão</h5>
                     <p class="rating">⭐ 4.5 • 54 avaliações</p>
                     <p class="card-price">R$ 139,90</p>
-                    <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    <button class="btn btn-buy w-100 open-modal-btn" data-bs-toggle="modal" data-bs-target="#productModal">Escolher tamanho</button>
                 </div>
             </div>
         </div>
 
         <!-- CARD 9 -->
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card position-relative">
+            <div class="card position-relative product-card" data-name="Shoulder Bag Minimal" data-price="69,90">
                 <span class="badge-promo">🔥 Promo do Dia</span>
-                <img src="https://cdn.awsli.com.br/600x700/2579/2579297/produto/286722331/102-lqnfwhaaaf.jpg">
+                <img src="https://cdn.awsli.com.br/600x700/2579/2579297/produto/286722331/102-lqnfwhaaaf.jpg" alt="Shoulder Bag Minimal">
                 <div class="card-body">
                     <h5 class="card-title">Shoulder Bag Minimal</h5>
                     <p class="rating">⭐ 4.7 • 190 avaliações</p>
                     <p class="card-price">R$ 69,90</p>
-                    <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
+                    <button class="btn btn-buy w-100 open-modal-btn" data-bs-toggle="modal" data-bs-target="#productModal">Escolher tamanho</button>
                 </div>
             </div>
         </div>
@@ -197,11 +198,34 @@
     </div>
 </section>
 
+<!-- MODAL PARA ESCOLHA DE TAMANHO -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
 
-        <!-- (os outros 8 cards permanecem IGUAIS aos que você já tem) -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">Escolha o tamanho</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+
+      <div class="modal-body">
+        <p id="modalProductName" class="fw-bold mb-3"></p>
+
+        <div class="d-flex gap-2 mb-4 justify-content-center flex-wrap">
+          <button type="button" class="btn btn-outline-dark size-btn">P</button>
+          <button type="button" class="btn btn-outline-dark size-btn">M</button>
+          <button type="button" class="btn btn-outline-dark size-btn">G</button>
+          <button type="button" class="btn btn-outline-dark size-btn">GG</button>
+        </div>
+
+        <a id="whatsappBtn" href="#" target="_blank" class="btn btn-success w-100 disabled" tabindex="-1" aria-disabled="true">
+          <i class="fa-brands fa-whatsapp"></i> Enviar no WhatsApp
+        </a>
+      </div>
 
     </div>
-</section>
+  </div>
+</div>
 
 <!-- WHATSAPP -->
 <a href="https://wa.me/55999999999" class="btn-whatsapp" target="_blank">💬</a>
@@ -223,16 +247,7 @@
 <script>
     AOS.init({ once: true });
 
-    const buttons = document.querySelectorAll('.btn-buy');
-    const popup = document.getElementById('cart-popup');
-
-    buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            popup.classList.add('show');
-            setTimeout(() => popup.classList.remove('show'), 2000);
-        });
-    });
-
+    // Search input filter
     const searchInput = document.getElementById('searchBar');
     const cards = document.querySelectorAll('.col-md-4');
 
@@ -241,6 +256,50 @@
         cards.forEach(card => {
             const title = card.querySelector('.card-title').textContent.toLowerCase();
             card.style.display = title.includes(value) ? 'block' : 'none';
+        });
+    });
+
+    // Variables for modal functionality
+    const productModal = document.getElementById('productModal');
+    const modalProductName = document.getElementById('modalProductName');
+    const whatsappBtn = document.getElementById('whatsappBtn');
+    const sizeButtons = document.querySelectorAll('.size-btn');
+
+    let selectedProduct = "";
+    let selectedSize = "";
+
+    // Abrir modal e preencher nome do produto
+    document.querySelectorAll('.open-modal-btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const card = e.target.closest('.product-card');
+            selectedProduct = card.dataset.name;
+            modalProductName.textContent = selectedProduct;
+
+            selectedSize = "";
+            whatsappBtn.classList.add('disabled');
+            whatsappBtn.setAttribute('aria-disabled', 'true');
+            whatsappBtn.removeAttribute('href');
+
+            // Remove active class from all size buttons
+            sizeButtons.forEach(btn => btn.classList.remove('active'));
+        });
+    });
+
+    // Seleção do tamanho
+    sizeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            sizeButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            selectedSize = btn.textContent;
+
+            // Monta a mensagem para WhatsApp
+            const phone = "5538999432945"; // Coloque seu número aqui (com código do país)
+            const message = encodeURIComponent(`Olá! Tenho interesse no produto *${selectedProduct}*, tamanho *${selectedSize}*.`);
+
+            whatsappBtn.href = `https://wa.me/${phone}?text=${message}`;
+            whatsappBtn.classList.remove('disabled');
+            whatsappBtn.removeAttribute('aria-disabled');
+            whatsappBtn.setAttribute('tabindex', '0');
         });
     });
 </script>

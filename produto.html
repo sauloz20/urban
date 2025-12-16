@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Urban Line - Moda Urbana</title>
+    <title>Urban Line - Catálogo</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -12,251 +11,346 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Ícones -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- Animações -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <style>
+      /* Estilo para botão WhatsApp desabilitado */
+      #whatsappBtn.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    </style>
 </head>
-
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-3" href="#">
-                Urban Line
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">Urban Line</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" id="menuLateral">
+            <div class="offcanvas-header">
+                <h5 class="fw-bold">Urban Line</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto fs-5">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produto.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Novidades</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#"><i class="fa-solid fa-cart-shopping"></i> Carrinho</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold" id="menuLateralLabel">Urban Line</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fs-5">
-                        <li class="nav-item mb-3"><a class="nav-link" href="#hero">Início</a></li>
-                        <li class="nav-item mb-3"><a class="nav-link" href="#produtos">Produtos</a></li>
-                        <li class="nav-item mb-3"><a class="nav-link" href="#novidades">Novidades</a></li>
-                        <li class="nav-item mb-3"><a class="nav-link" href="#contato">Contato</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold fs-5" href="#">
-                                <i class="fa-solid fa-cart-shopping"></i> Carrinho
-                            </a>
-                        </li>
-                    </ul>
+<!-- HERO -->
+<section class="hero-section text-center d-flex align-items-center justify-content-center">
+    <div class="hero-content">
+        <h1 class="hero-title">Explore o Catálogo</h1>
+        <p class="hero-sub">Encontre seu estilo urbano ideal</p>
+        <div class="hero-search">
+            
+            <input type="text" id="searchBar" placeholder="Buscar produtos..." />
+        </div>
+    </div>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="container py-5">
+    <div class="row g-4">
+
+        <!-- CARD 1 -->
+        <div class="col-md-4 product">
+            <div class="card product-card"
+                 data-name="Camiseta Streetwear"
+                 data-price="89,90"
+                 data-bs-toggle="modal"
+                 data-bs-target="#productModal">
+                <img src="https://i.pinimg.com/1200x/c2/8d/39/c28d39c3b4447a3e9e04e70c43ad9f1e.jpg" />
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta Streetwear</h5>
+                    <p>R$ 89,90</p>
+                    <button class="btn btn-buy w-100">Escolher tamanho</button>
                 </div>
             </div>
         </div>
-    </nav>
-    <div class="search-container">
-        <div class="search-box">
-            <input type="text" id="searchBar" placeholder="Pesquisar produtos...">
-            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
+        <!-- CARD 2 -->
+        <div class="col-md-4 product">
+            <div class="card product-card"
+                 data-name="Calça Cargo"
+                 data-price="129,90"
+                 data-bs-toggle="modal"
+                 data-bs-target="#productModal">
+                <img src="https://img.ltwebstatic.com/images3_pi/2025/01/20/a2/173733883965d0c45b349fb24fe4dca4e02f10b2f3.webp" />
+                <div class="card-body">
+                    <h5 class="card-title">Calça Cargo</h5>
+                    <p>R$ 129,90</p>
+                    <button class="btn btn-buy w-100">Escolher tamanho</button>
+                </div>
+            </div>
         </div>
+
+        <!-- CARD 3 -->
+        <div class="col-md-4 product">
+            <div class="card product-card"
+                 data-name="Blusa canelada preta"
+                 data-price="69,90"
+                 data-bs-toggle="modal"
+                 data-bs-target="#productModal">
+                <img src="https://i.pinimg.com/1200x/4b/7c/d0/4b7cd0e6ddb5017fddba27b8970e7347.jpg" />
+                <div class="card-body">
+                    <h5 class="card-title">Blusa canelada preta</h5>
+                    <p>R$ 69,90</p>
+                    <button class="btn btn-buy w-100">Escolher tamanho</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="col-md-4 product">
+            <div class="card product-card"
+                 data-name="Jaqueta estampada"
+                 data-price="299,90"
+                 data-bs-toggle="modal"
+                 data-bs-target="#productModal">
+                <img src="https://i.pinimg.com/1200x/f5/bb/7d/f5bb7d72b33f8c5ed29df857b9a87df0.jpg" />
+                <div class="card-body">
+                    <h5 class="card-title">Jaqueta estampada</h5>
+                    <p>R$ 299,90</p>
+                    <button class="btn btn-buy w-100">Escolher tamanho</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="col-md-4 product">
+            <div class="card product-card"
+                 data-name="Camiseta Streetwear"
+                 data-price="89,90"
+                 data-bs-toggle="modal"
+                 data-bs-target="#productModal">
+                <img src="https://cdn.sistemawbuy.com.br/arquivos/9fa85fff5ce81908a51b793785419a26/produtos/68e6b2f60939f/global_dist_pto_mode2-692381071bad2.jpg" />
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta Streetwear</h5>
+                    <p>R$ 89,90</p>
+                    <button class="btn btn-buy w-100">Escolher tamanho</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="col-md-4 product">
+            <div class="card product-card"
+                 data-name="Calça Cargo"
+                 data-price="224,90"
+                 data-bs-toggle="modal"
+                 data-bs-target="#productModal">
+                <img src="https://img.ltwebstatic.com/images3_pi/2024/12/30/fc/1735527080630874add779a33c7745d6b9916a97ff.webp" />
+                <div class="card-body">
+                    <h5 class="card-title">Calça Cargo</h5>
+                    <p>R$ 224,90</p>
+                    <button class="btn btn-buy w-100">Escolher tamanho</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="col-md-4 product">
+            <div class="card product-card"
+                 data-name="Camiseta Básica"
+                 data-price="69,90"
+                 data-bs-toggle="modal"
+                 data-bs-target="#productModal">
+                <img src="https://i.pinimg.com/736x/6a/18/44/6a184483e4aa66f4fb108f3e32687a85.jpg" alt="Camiseta Básica" />
+                <div class="card-body">
+                    <h5 class="card-title">Camiseta Básica</h5>
+                    <p>R$ 69,90</p>
+                    <button class="btn btn-buy w-100">Escolher tamanho</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="col-md-4 product">
+            <div class="card product-card"
+                 data-name="Blusa Moletom Street"
+                 data-price="149,90"
+                 data-bs-toggle="modal"
+                 data-bs-target="#productModal">
+                <img src="https://i.pinimg.com/736x/4c/fa/f6/4cfaf609af8f99c7d1894bcfbef2fc6c.jpg" alt="Blusa Moletom Street" />
+                <div class="card-body">
+                    <h5 class="card-title">Blusa Moletom Street</h5>
+                    <p>R$ 149,90</p>
+                    <button class="btn btn-buy w-100">Escolher tamanho</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="col-md-4 product">
+            <div class="card product-card"
+                 data-name="Calça Jeans Skinny"
+                 data-price="139,90"
+                 data-bs-toggle="modal"
+                 data-bs-target="#productModal">
+                <img src="https://i.pinimg.com/1200x/f3/cc/3d/f3cc3de0943c8dcaa8201a021a324834.jpg" alt="Calça cargo preta" />
+                <div class="card-body">
+                    <h5 class="card-title">Calça cargo preta</h5>
+                    <p>R$ 139,90</p>
+                    <button class="btn btn-buy w-100">Escolher tamanho</button>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
-    <!-- HERO -->
-    <section id="hero" class="hero-section text-center d-flex align-items-center justify-content-center">
-        <div data-aos="fade-up">
-            <h1 class="hero-title">Urban Line</h1>
-            <p class="hero-sub">Moda que acompanha seu ritmo.</p>
-            <a href="#produtos" class="btn btn-buy">Comprar Agora</a>
-        </div>
-    </section>
-
-    <!-- PRODUTOS -->
     <section id="produtos" class="container py-5">
-        <h2 class="text-center mb-5" data-aos="fade-up">Produtos em promoção</h2>
+  <div class="row g-4">
 
-        <div class="row g-4">
-
-            <!-- CARD 1 -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://cdn.sistemawbuy.com.br/arquivos/9fa85fff5ce81908a51b793785419a26/produtos/68e6b2f60939f/global_dist_pto_mode2-692381071bad2.jpg" alt="Camiseta" />
-                    <div class="card-body">
-                        <h5 class="card-title">Camiseta Streetwear</h5>
-                        <p class="rating">⭐ 4.8 • 120 avaliações</p>
-                        <p class="card-price">R$ 89,90</p>
-                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://lojalevis.vtexassets.com/arquivos/ids/610740-800-800?v=638839879307400000&width=800&height=800&aspect=true" alt="Moletom" />
-                    <div class="card-body">
-                        <h5 class="card-title">Moletom Urban</h5>
-                        <p class="rating">⭐ 4.9 • 98 avaliações</p>
-                        <p class="card-price">R$ 149,90</p>
-                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://images.tcdn.com.br/img/img_prod/1171095/calca_cargo_no_age_basic_preto_543_1_0bc4591cd5ec42aa6bb9f6886b1613f4.jpg" alt="Calça Cargo" />
-                    <div class="card-body">
-                        <h5 class="card-title">Calça Cargo</h5>
-                        <p class="rating">⭐ 4.7 • 210 avaliações</p>
-                        <p class="card-price">R$ 129,90</p>
-                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rdvj-lxmwr88c9y1r93.webp" alt="Boné Aba Reta" />
-                    <div class="card-body">
-                        <h5 class="card-title">Boné Aba Reta</h5>
-                        <p class="rating">⭐ 4.6 • 67 avaliações</p>
-                        <p class="card-price">R$ 59,90</p>
-                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 5 -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://thesaint.com.br/media/catalog/product/1/4/14.01.03.011.007_1_p6vzkyh8qol55rbp.webp" alt="Jaqueta Oversized" />
-                    <div class="card-body">
-                        <h5 class="card-title">Jaqueta Oversized</h5>
-                        <p class="rating">⭐ 5.0 • 140 avaliações</p>
-                        <p class="card-price promo"><span>R$ 259,90</span> R$ 199,90</p>
-                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 6 -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://acdn-us.mitiendanube.com/stores/004/270/422/products/21-41dc766ee472e8d2fb17534682666725-1024-1024.webp" alt="Camiseta Premium" />
-                    <div class="card-body">
-                        <h5 class="card-title">Camiseta Premium</h5>
-                        <p class="rating">⭐ 4.8 • 188 avaliações</p>
-                        <p class="card-price">R$ 79,90</p>
-                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 7 -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://down-br.img.susercontent.com/file/br-11134207-81z1k-mepq0azkptz70c.webp" alt="Tênis Urban Flex" />
-                    <div class="card-body">
-                        <h5 class="card-title">Tênis Urban Flex</h5>
-                        <p class="rating">⭐ 4.9 • 402 avaliações</p>
-                        <p class="card-price">R$ 229,90</p>
-                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 8 -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lx5kn3pg71cid2" alt="Calça balão" />
-                    <div class="card-body">
-                        <h5 class="card-title">Calça Balão</h5>
-                        <p class="rating">⭐ 4.5 • 54 avaliações</p>
-                        <p class="card-price">R$ 139,90</p>
-                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 9 -->
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card">
-                    <img src="https://cdn.awsli.com.br/600x700/2579/2579297/produto/286722331/102-lqnfwhaaaf.jpg" alt="Shoulder Bag" />
-                    <div class="card-body">
-                        <h5 class="card-title">Shoulder Bag Minimal</h5>
-                        <p class="rating">⭐ 4.7 • 190 avaliações</p>
-                        <p class="card-price">R$ 69,90</p>
-                        <button class="btn btn-buy w-100">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-            </div>
-
+    <!-- Card 1 -->
+    <div class="col-md-4 product">
+      <div class="card product-card" data-name="Camiseta Streetwear" data-price="89,90" data-bs-toggle="modal" data-bs-target="#productModal">
+        <img src="https://i.pinimg.com/1200x/ea/0a/b4/ea0ab4c609b930466d6731528d29c9ab.jpg" class="card-img-top" alt="Camiseta Streetwear" />
+        <div class="card-body">
+          <h5 class="card-title">Camiseta Streetwear</h5>
+          <p>R$ 89,90</p>
+          <button class="btn btn-buy w-100">Escolher tamanho</button>
         </div>
-    </section>
-
-    <!-- WHATSAPP BUTTON -->
-    <a href="https://wa.me/55999999999" class="btn-whatsapp" target="_blank">💬</a>
-
-    <!-- RODAPÉ -->
-    <footer id="contato" class="text-center p-4 mt-5">
-        <h5>Urban Line</h5>
-        <p>Moda Urbana • Estilo • Atitude</p>
-        <p>Contato: urbanline@contato.com</p>
-        <p>&copy; 2025 Urban Line - Todos os direitos reservados.</p>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- AOS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <!-- POP-UP CARRINHO -->
-    <div id="cart-popup" class="cart-popup">
-        ✅ Produto adicionado ao carrinho!
+      </div>
     </div>
-    <script>
-        // Seleciona todos os botões "Adicionar ao carrinho"
-        const addToCartButtons = document.querySelectorAll('.btn-buy');
 
-        // Seleciona o pop-up
-        const cartPopup = document.getElementById('cart-popup');
+    <!-- Card 2 -->
+    <div class="col-md-4 product">
+      <div class="card product-card" data-name="Calça Cargo" data-price="129,90" data-bs-toggle="modal" data-bs-target="#productModal">
+        <img src="https://img.ltwebstatic.com/images3_pi/2023/11/06/0e/1699243443ac2400e4a9f139cb0cfc8ab959a5697b.webp" class="card-img-top" alt="Calça sarja" />
+        <div class="card-body">
+          <h5 class="card-title">Calça sarja</h5>
+          <p>R$ 129,90</p>
+          <button class="btn btn-buy w-100">Escolher tamanho</button>
+        </div>
+      </div>
+    </div>
 
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Mostra o pop-up
-                cartPopup.classList.add('show');
+    <!-- Card 3 -->
+    <div class="col-md-4 product">
+      <div class="card product-card" data-name="Blusa canelada preta" data-price="69,90" data-bs-toggle="modal" data-bs-target="#productModal">
+        <img src="https://i.pinimg.com/1200x/7d/f0/d1/7df0d1309d9c5b2f5dab6da187bf9185.jpg" class="card-img-top" alt="Blusa canelada branca" />
+        <div class="card-body">
+          <h5 class="card-title">Blusa canelada branca</h5>
+          <p>R$ 69,90</p>
+          <button class="btn btn-buy w-100">Escolher tamanho</button>
+        </div>
+      </div>
+    </div>
 
-                // Esconde depois de 2 segundos
-                setTimeout(() => {
-                    cartPopup.classList.remove('show');
-                }, 2000);
-            });
-        });
-    </script>
-    <script>
-        const searchInput = document.getElementById("searchBar");
-        const productCards = document.querySelectorAll(".card");
+    <!-- Continue com os demais cards dentro do mesmo .row -->
 
-        searchInput.addEventListener("input", () => {
-            const searchText = searchInput.value.toLowerCase();
+  </div>
+</section>
 
-            productCards.forEach(card => {
-                const productName = card.querySelector(".card-title").textContent.toLowerCase();
+</section>
 
-                if (productName.includes(searchText)) {
-                    card.parentElement.style.display = "block"; // Mostra o card
-                } else {
-                    card.parentElement.style.display = "none"; // Esconde o card
-                }
-            });
-        });
-    </script>
+
+<!-- MODAL PRODUTO -->
+<div class="modal fade" id="productModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProductName"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p id="modalProductPrice"></p>
+
+        <label class="fw-bold mb-2">Escolha o tamanho:</label>
+        <div class="d-flex gap-2 mb-4">
+          <button class="btn btn-outline-dark size-btn">P</button>
+          <button class="btn btn-outline-dark size-btn">M</button>
+          <button class="btn btn-outline-dark size-btn">G</button>
+          <button class="btn btn-outline-dark size-btn">GG</button>
+        </div>
+
+        <a id="whatsappBtn" class="btn btn-success w-100 disabled" target="_blank" href="#">
+            <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+let selectedSize = "";
+
+const whatsappBtn = document.getElementById("whatsappBtn");
+
+// Inicialmente desabilita o botão WhatsApp
+whatsappBtn.classList.add("disabled");
+whatsappBtn.href = "#";
+
+document.querySelectorAll(".product-card").forEach(card => {
+    card.addEventListener("click", () => {
+        const name = card.dataset.name;
+        const price = card.dataset.price;
+
+        document.getElementById("modalProductName").innerText = name;
+        document.getElementById("modalProductPrice").innerText = "Preço: R$ " + price;
+        selectedSize = "";
+
+        // Desabilita o botão ao abrir modal
+        whatsappBtn.classList.add("disabled");
+        whatsappBtn.href = "#";
+
+        // Remove seleção visual dos botões de tamanho
+        document.querySelectorAll(".size-btn").forEach(b => b.classList.remove("active"));
+    });
+});
+
+document.querySelectorAll(".size-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelectorAll(".size-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        selectedSize = btn.innerText;
+
+        const product = document.getElementById("modalProductName").innerText;
+        const price = document.getElementById("modalProductPrice").innerText;
+        const phone = "5538999432945"; // SEU NÚMERO
+
+        const message = `Olá! Tenho interesse no produto *${product}*%0ATamanho: ${selectedSize}%0A${price}`;
+        whatsappBtn.href = `https://wa.me/${phone}?text=${message}`;
+
+        // Habilita o botão após escolher tamanho
+        whatsappBtn.classList.remove("disabled");
+    });
+});
+</script>
+<script>
+const searchBar = document.getElementById('searchBar');
+const products = document.querySelectorAll('.product-card');
+
+searchBar.addEventListener('input', () => {
+    const searchTerm = searchBar.value.toLowerCase();
+
+    products.forEach(card => {
+        const productName = card.dataset.name.toLowerCase();
+        if (productName.includes(searchTerm)) {
+            card.parentElement.style.display = 'block'; // Mostrar o card
+        } else {
+            card.parentElement.style.display = 'none'; // Esconder o card
+        }
+    });
+});
+</script>
 
 
 </body>
-
 </html>

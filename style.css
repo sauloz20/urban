@@ -52,6 +52,8 @@ h2 {
 }
 
 /* ... restante do CSS continua igual ... */
+
+/* ... restante do CSS continua igual ... */
 .hero-content {
     width: 100%;
     max-width: 500px;
@@ -204,4 +206,18 @@ footer {
 @media (max-width: 768px) {
     .hero-title { font-size: 2.4rem; }
     .card img { height: 220px; }
+}
+.offcanvas-backdrop.show {
+  background-color: rgba(0, 0, 0, 1) !important; /* Preto 100% opaco */
+}
+
+/* Fundo preto com transparência no backdrop do offcanvas */
+.offcanvas-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  opacity: 1 !important;
+}
+
+/* Bloqueia scroll do body quando o offcanvas está aberto */
+body.offcanvas-open {
+  overflow: hidden;
 }

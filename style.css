@@ -7,13 +7,24 @@
     --card-bg: #151515;
 }
 
+/* RESET básico para html e body */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 /* BASE */
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--dark);
     color: var(--light);
-    padding-top: 80px;
+    padding-top: 56px; /* Altura padrão da navbar fixa do Bootstrap */
     overflow-x: hidden;
+}
+
+/* Remove margem superior do hero para evitar espaço extra */
+#hero {
+    margin-top: 0;
 }
 
 h2 {
@@ -40,6 +51,7 @@ h2 {
     padding: 40px 20px;
 }
 
+/* ... restante do CSS continua igual ... */
 .hero-content {
     width: 100%;
     max-width: 500px;
